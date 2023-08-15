@@ -1,0 +1,7 @@
+{
+  "name": "Jaimes App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
