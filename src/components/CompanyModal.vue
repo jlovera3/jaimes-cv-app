@@ -1,8 +1,8 @@
 <template>
   <IonToolbar>
-    <IonHeader>
+    <IonHeader class="mt-[env(safe-area-inset-top)] flex ">
+      <IonIcon :src="closeOutline" @click="dismiss()" class="h-7 w-7"></IonIcon>
       <div class="h-auto w-20 justify-center align-middle text-center">
-        <IonBackButton></IonBackButton>
         <img
           :src="`/companies/${props.company.logo}.png`"
           class="max-w-[100%] max-h-[100%]"
@@ -28,14 +28,27 @@
   </IonContent>
 </template>
 
-<script setup lang="ts">;
-import { IonBackButton, IonContent, IonHeader, IonToolbar } from "@ionic/vue";
+<script setup lang="ts">
+import {
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonToolbar,
+  modalController,
+} from "@ionic/vue";
 import Project from "./Project.vue";
 import { Company } from "../interfaces/company.interface";
+import { closeOutline } from "ionicons/icons";
 
 const props = defineProps<{
   company: Company;
 }>();
+const modalCtr = modalController;
+
+function dismiss() {
+  console.log('dismiss - dismiss:', dismiss);
+  modalCtr.dismiss();
+}
 </script>
 
 <style scoped>
