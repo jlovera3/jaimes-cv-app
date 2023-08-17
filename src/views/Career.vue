@@ -1,19 +1,19 @@
 <template>
   <ion-page>
     <AppHeader></AppHeader>
-    <ion-content :fullscreen="true">
+    <ion-content :fullscreen="true" class="blue-background">
       <div
         class="p-5 grid justify-center items-center sm:flex sm:justify-around sm:pt-20 sm:px-10"
       >
         <IonCard
-          v-for="company in companies"
-          class="w-auto h-40 text-center flex justify-center items-center mb-0 hover:bg-slate-200 active:bg-slate-50 sm:w-[20%]"
+          v-for="(company, index) in companies"
+          class="animate-fade-left w-80 h-20 text-center flex justify-center items-center mb-0 hover:bg-slate-200 active:bg-slate-50 sm:w-[20%]"
           @click="openDetails(company)"
         >
-          <IonCardContent class="text-center flex justify-center items-center">
+          <IonCardContent class="p-0 text-center flex justify-center items-center">
             <img
               :src="`/companies/${company.logo}.png`"
-              class="max-w-[80%] max-h-[80%]"
+              class="max-w-[100%] max-h-[100%]"
             />
           </IonCardContent>
         </IonCard>
@@ -74,6 +74,10 @@ const companies: Company[] = [
         name: 'Calidad del Aire',
         logo: '/projects/calidad-app-logo.png'
       },
+      {
+        name: 'Digitalízate Plus',
+        logo: '/projects/logo_fundae.svg'
+      },
     ],
   },
   {
@@ -109,3 +113,9 @@ async function openDetails(company: Company) {
   return (await modalCtl).present();
 }
 </script>
+
+<style>
+.blue-background{
+  background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+}
+</style>

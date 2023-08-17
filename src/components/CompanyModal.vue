@@ -1,8 +1,8 @@
 <template>
   <IonToolbar>
-    <IonHeader class="mt-[env(safe-area-inset-top)] flex ">
-      <IonIcon :src="closeOutline" @click="dismiss()" class="h-7 w-7"></IonIcon>
-      <div class="h-auto w-20 justify-center align-middle text-center">
+    <IonHeader class="flex mt-[env(safe-area-inset-top)]">
+      <IonIcon :src="closeOutline" @click="dismiss()" class="h-6 w-6"></IonIcon>
+      <div class="h-auto w-20 justify-center align-middle text-center ml-[32%]">
         <img
           :src="`/companies/${props.company.logo}.png`"
           class="max-w-[100%] max-h-[100%]"
@@ -12,7 +12,7 @@
   </IonToolbar>
   <IonContent>
     <div>
-      <div id="container">
+<!--       <div id="container">
         <strong>{{ props.company.name }}</strong>
         <p>
           Explore
@@ -20,7 +20,7 @@
             >Company Website</a
           >
         </p>
-      </div>
+      </div> -->
       <div v-for="project in props.company.projects">
         <Project :project="project"> </Project>
       </div>

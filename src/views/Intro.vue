@@ -5,8 +5,8 @@
       <IonHeader collapse="condense"> </IonHeader>
       <IonItem class="m-4">
         <IonLabel>
-          <h1>Profile</h1>
-          <p class="whitespace-normal !mt-6">
+          <h1 class="animate-fade-up animate-ease-out">Profile</h1>
+          <p class="whitespace-normal animate-fade-left animate-delay-100 !mt-6">
             After spending a few years studying Industrial Engineering, I
             discovered my passion for programming and mobile applications, and
             since then I have put all my being into trying to be the best at
@@ -17,9 +17,9 @@
       </IonItem>
       <IonItem class="m-4">
         <IonLabel>
-          <h1>Education</h1>
+          <h1 class="animate-fade-up animate-ease-out">Education</h1>
           <IonList class="whitespace-normal !mt-6">
-            <IonItem>
+            <IonItem class="animate-fade-left animate-delay-200">
               <IonLabel>
                 <h3>Bachelor (2012 - 2014)</h3>
                 <p class="whitespace-normal !mt-2">Sciences Bachelor studies</p>
@@ -32,7 +32,7 @@
                 </a>
               </IonLabel>
             </IonItem>
-            <IonItem>
+            <IonItem  class="animate-fade-left animate-delay-300">
               <IonLabel>
                 <h3>University (2014 - 2018)</h3>
                 <p class="whitespace-normal !mt-2">
@@ -47,9 +47,9 @@
                 </a>
               </IonLabel>
             </IonItem>
-            <IonItem lines="none">
+            <IonItem  class="animate-fade-left animate-delay-500" lines="none">
               <IonLabel>
-                <h3>Bachelor (2018 - 2020)</h3>
+                <h3>Higher Degree (2018 - 2020)</h3>
                 <p class="whitespace-normal !mt-2">
                   Higher Degree in Development of Multiplatform Applications
                 </p>
