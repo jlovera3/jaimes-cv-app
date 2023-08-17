@@ -17,6 +17,12 @@ export default {
       lg: "1440px",
       // => @media (min-width: 1440px) { ... }
     },
+    extend: {
+      backgroundImage: {
+        'banner': "url('public/pictures/banner.png')",
+        'banner-notch': "url('public/pictures/banner-notch.png')",
+      }
+    }
   },
   variants: {},
   plugins: [],

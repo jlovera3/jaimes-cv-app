@@ -1,10 +1,6 @@
 <template>
   <ion-page>
-    <ion-header class="shadow-grey shadow-md">
-      <ion-toolbar>
-        <ion-title class="text-center">Career</ion-title>
-      </ion-toolbar>
-    </ion-header>
+    <AppHeader></AppHeader>
     <ion-content :fullscreen="true">
       <div
         class="p-5 grid justify-center items-center sm:flex sm:justify-around sm:pt-20 sm:px-10"
@@ -39,6 +35,7 @@ import {
 } from "@ionic/vue";
 import { Company } from "../interfaces/company.interface";
 import CompanyModal from "../components/CompanyModal.vue";
+import AppHeader from "@/components/AppHeader.vue";
 
 const companies: Company[] = [
   {
