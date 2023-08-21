@@ -7,13 +7,13 @@
       >
         <IonCard
           v-for="(company, index) in companies"
-          class="animate-fade-left w-80 h-20 text-center flex justify-center items-center mb-0 hover:bg-slate-200 active:bg-slate-50 sm:w-[20%]"
+          class="animate-fade-left w-80 h-25 text-center flex justify-center items-center mb-0 hover:bg-slate-200 active:bg-slate-50 sm:w-[20%]"
           @click="openDetails(company)"
         >
           <IonCardContent class="p-0 text-center flex justify-center items-center">
             <img
               :src="`/companies/${company.logo}.png`"
-              class="max-w-[100%] max-h-[100%]"
+              class="max-w-[80%] max-h-auto"
             />
           </IonCardContent>
         </IonCard>
