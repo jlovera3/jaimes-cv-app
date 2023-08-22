@@ -1,5 +1,6 @@
 <template>
-  <div class="w-full flex">
+  <div class="w-full flex"
+    @click="openProject()">
     <IonCard class="h-20 w-20 rounded-[100%]">
       <img :src="`${props.project.logo}`" class="h-20 w-20"/>
     </IonCard>
@@ -17,6 +18,10 @@ import { Project } from "../interfaces/project.interface";
 const props = defineProps<{
   project: Project;
 }>();
+
+function openProject() {
+  console.log('open project, ', props.project);
+}
 </script>
 
 <style scoped>

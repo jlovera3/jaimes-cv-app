@@ -12,15 +12,6 @@
   </IonToolbar>
   <IonContent>
     <div>
-<!--       <div id="container">
-        <strong>{{ props.company.name }}</strong>
-        <p>
-          Explore
-          <a target="_blank" rel="noopener noreferrer" :href="props.company.url"
-            >Company Website</a
-          >
-        </p>
-      </div> -->
       <div v-for="project in props.company.projects">
         <Project :project="project"> </Project>
       </div>
