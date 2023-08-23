@@ -6,12 +6,13 @@
       <IonItem class="m-4">
         <IonLabel>
           <h1 class="animate-fade-up animate-ease-out">Profile</h1>
-          <p class="whitespace-normal animate-fade-left animate-delay-100 !mt-6">
-            After spending a few years studying Industrial Engineering, I
-            discovered my passion for programming and mobile applications, and
-            since then I have put all my being into trying to be the best at
-            what I do. I am sociable and I solve problems calmly and with a cool
-            mind.
+          <p
+            class="whitespace-normal animate-fade-left animate-delay-100 !mt-6"
+          >
+            After studying Industrial Engineering for a few years, I found my
+            love for programming and making mobile apps. Since then, I've been
+            fully dedicated to becoming the best at what I do. I'm friendly, and
+            I'm good at staying calm and solving problems
           </p>
         </IonLabel>
       </IonItem>
@@ -19,7 +20,7 @@
         <IonLabel>
           <h1 class="animate-fade-up animate-ease-out">Education</h1>
           <IonList class="whitespace-normal !mt-6">
-            <IonItem class="animate-fade-left animate-delay-200">
+            <!-- <IonItem class="animate-fade-left animate-delay-200">
               <IonLabel>
                 <h3>Bachelor (2012 - 2014)</h3>
                 <p class="whitespace-normal !mt-2">Sciences Bachelor studies</p>
@@ -31,8 +32,8 @@
                   La Salle Córdoba School
                 </a>
               </IonLabel>
-            </IonItem>
-            <IonItem  class="animate-fade-left animate-delay-300">
+            </IonItem> -->
+            <IonItem class="animate-fade-left animate-delay-300">
               <IonLabel>
                 <h3>University (2014 - 2018)</h3>
                 <p class="whitespace-normal !mt-2">
@@ -47,7 +48,7 @@
                 </a>
               </IonLabel>
             </IonItem>
-            <IonItem  class="animate-fade-left animate-delay-500" lines="none">
+            <IonItem class="animate-fade-left animate-delay-500" lines="none">
               <IonLabel>
                 <h3>Higher Degree (2018 - 2020)</h3>
                 <p class="whitespace-normal !mt-2">

@@ -11,7 +11,8 @@
     "test:unit": "vitest",
     "lint": "eslint",
     "start:android": "npm run build && npx cap copy android && npx cap open android",
-    "update:android": "npm run build && npx cap copy android"
+    "update:android": "npm run build && npx cap copy android",
+    "ios": "ionic capacitor run ios -l --external --target=A9E64202-BBFF-4C13-A18A-89D4A1545A03"
   },
   "dependencies": {
     "@capacitor/android": "5.2.3",

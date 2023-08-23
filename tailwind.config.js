@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
 export default {
   content: [
     // Example content paths...
@@ -22,6 +24,9 @@ export default {
         'banner': "url('public/pictures/banner.png')",
         'banner-notch': "url('public/pictures/banner-notch.png')",
       }
+    },
+    colors: {
+      white: colors.white,
     }
   },
   variants: {},

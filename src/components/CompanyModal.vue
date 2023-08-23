@@ -11,19 +11,55 @@
     </IonHeader>
   </IonToolbar>
   <IonContent>
-    <div>
-      <div v-for="project in props.company.projects">
-        <Project :project="project"> </Project>
-      </div>
-    </div>
+    <IonCard>
+      <IonCardHeader class="text-center pb-0">
+        <IonItem>
+          <IonLabel><h1 class="whitespace-break-spaces">{{ props.company.role }}</h1></IonLabel>
+        </IonItem>
+      </IonCardHeader>
+      <IonCardContent class="m-4">
+        <IonLabel><h2>{{ props.company.duration }}</h2></IonLabel>
+      </IonCardContent>
+    </IonCard>
+    <IonCard>
+      <IonCardHeader class="text-center pb-0">
+        <IonItem>
+          <IonLabel><h1>Projects</h1></IonLabel>
+        </IonItem>
+      </IonCardHeader>
+      <IonCardContent class="">
+        <div class="flex flex-wrap">
+          <div v-for="project in props.company.projects" class="w-1/4">
+            <Project :project="project"> </Project>
+          </div>
+        </div>
+      </IonCardContent>
+    </IonCard>
+    <IonCard>
+      <IonCardHeader class="text-center pb-0">
+        <IonItem>
+          <IonLabel><h1>Responsabilities</h1></IonLabel>
+        </IonItem>
+      </IonCardHeader>
+      <IonCardContent>
+        <IonItem v-for="resp in props.company.responsabilities">
+          <IonLabel><p class="whitespace-break-spaces">{{ resp }}</p></IonLabel>
+        </IonItem>
+      </IonCardContent>
+    </IonCard>
   </IonContent>
 </template>
 
 <script setup lang="ts">
 import {
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
   IonContent,
   IonHeader,
   IonIcon,
+  IonItem,
+  IonLabel,
   IonToolbar,
   modalController,
 } from "@ionic/vue";
@@ -37,7 +73,6 @@ const props = defineProps<{
 const modalCtr = modalController;
 
 function dismiss() {
-  console.log('dismiss - dismiss:', dismiss);
   modalCtr.dismiss();
 }
 </script>

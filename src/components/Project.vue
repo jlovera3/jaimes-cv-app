@@ -1,28 +1,28 @@
 <template>
-  <div class="w-full flex"
-    @click="openProject()">
-    <IonCard class="h-20 w-20 rounded-[100%]">
-      <img :src="`${props.project.logo}`" class="h-20 w-20"/>
+  <div @click="openProject()">
+    <IonCard class="h-[80%] w-[80%] rounded-[100%] mb-0">
+      <img :src="`${props.project.logo}`"/>
     </IonCard>
-    <IonLabel class="my-8 mx-4">
-        <h3>{{ props.project.name }}</h3>
-        <p></p>
-    </IonLabel>
   </div>
 </template>
 
 <script setup lang="ts">
-import { IonCard, IonLabel } from "@ionic/vue";
+import { IonCard, IonLabel, modalController } from "@ionic/vue";
 import { Project } from "../interfaces/project.interface";
+import ProjectModal from "./ProjectModal.vue";
 
 const props = defineProps<{
   project: Project;
 }>();
 
-function openProject() {
-  console.log('open project, ', props.project);
+async function openProject() {
+  const modalCtl = modalController.create({
+    component: ProjectModal,
+    componentProps: { project: props.project },
+  });
+
+  return (await modalCtl).present();
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
