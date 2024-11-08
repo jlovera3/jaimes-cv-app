@@ -66,7 +66,7 @@ const companies: Company[] = [
     responsabilities: [
       "Working on several apps simultaneously to resolve bugs in production",
       "To be in charge of a team of 4 people managing and organizing the tasks of 3 projects while covering a paternity leave",
-      "Develop and enhance apps for external customers improving product quality and effectiveness"
+      "Develop and enhance apps for external customers improving product quality and effectiveness",
     ],
     url: "https://www.nttdata.com/global/en/",
     projects: [
