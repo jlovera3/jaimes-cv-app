@@ -74,16 +74,12 @@
 import {
   IonPage,
   IonHeader,
-  IonToolbar,
-  IonTitle,
   IonContent,
-  IonCard,
   IonItem,
   IonLabel,
   IonList,
   IonIcon,
 } from "@ionic/vue";
-import ExploreContainer from "../components/ExploreContainer.vue";
 import AppHeader from "@/components/AppHeader.vue";
 import { locationOutline } from "ionicons/icons";
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <ion-page>
+  <IonPage>
     <AppHeader></AppHeader>
-    <ion-content :fullscreen="true" class="blue-background">
+    <IonContent :fullscreen="true" class="blue-background">
       <div
         class="p-5 grid justify-center items-center sm:flex sm:justify-around sm:pt-20 sm:px-10"
       >
@@ -20,8 +20,8 @@
           </IonCardContent>
         </IonCard>
       </div>
-    </ion-content>
-  </ion-page>
+    </IonContent>
+  </IonPage>
 </template>
 
 <script setup lang="ts">

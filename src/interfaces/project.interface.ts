@@ -1,6 +1,6 @@
 export interface Project {
-    name: string;
-    logo: string;
-    googleUrl?: string;
-    appleUrl?: string;
+  name: string;
+  logo: string;
+  googleUrl?: string;
+  appleUrl?: string;
 }

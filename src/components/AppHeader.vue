@@ -39,7 +39,7 @@ logDeviceInfo();
 
 <style>
 .bg-banner {
-  background-image: url("../../public/pictures/banner.png");
+  background-image: url("../../public/pictures/banner2.png");
 }
 .bg-banner-notch {
   background-image: url("../../public/pictures/banner-notch.png");
