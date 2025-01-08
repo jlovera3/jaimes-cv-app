@@ -2,13 +2,14 @@
   <IonPage>
     <AppHeader></AppHeader>
     <IonContent :fullscreen="true">
-      <IonHeader collapse="condense"> </IonHeader>
+      <!-- <IonHeader collapse="condense"> </IonHeader>
       <IonLabel>
         <h1 class="animate-fade-up animate-ease-out">Skills</h1>
         <div class="">
           <Skill :skill="skill" v-for="(skill, index) in skills" :key="index"></Skill>
         </div>
-      </IonLabel>
+      </IonLabel> -->
+      <IonLabel>TBD</IonLabel>
     </IonContent>
   </IonPage>
 </template>

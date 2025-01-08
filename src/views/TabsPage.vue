@@ -2,7 +2,7 @@
   <IonPage>
     <IonTabs>
       <IonRouterOutlet></IonRouterOutlet>
-      <IonTabBar slot="bottom" class="shadow-black shadow-lg">
+      <IonTabBar slot="bottom" class="shadow-black shadow-xl">
         <IonTabButton tab="tab1" href="/tabs/tab1">
           <IonIcon aria-hidden="true" :icon="homeOutline" />
           <IonLabel>Intro</IonLabel>

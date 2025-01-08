@@ -41,7 +41,7 @@ const companies: Company[] = [
     name: "Meinestadt",
     logo: "logo-meinestadt",
     url: "https://www.meinestadt.de/",
-    duration: "Jan 2023 - Now",
+    duration: "Jan 2023 - Jan 2025",
     role: "Frontend Developer",
     responsabilities: [
       "Develop the app that represents the company's web portal",

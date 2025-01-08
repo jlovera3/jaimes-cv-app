@@ -1,5 +1,5 @@
 <template>
-  <IonHeader class="flex mt-[env(safe-area-inset-top)] p-4">
+  <IonHeader class="flex mt-[env(safe-area-inset-top)] p-4 pt-10">
     <IonIcon :src="closeOutline" @click="dismiss()" class="h-6 w-6"></IonIcon>
     <div class="h-auto w-20 justify-center align-middle text-center ml-[32%]">
       <img
