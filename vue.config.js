@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/jaimes-cv-app/'
+    publicPath: '/cv/'
 }
